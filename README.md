@@ -2,9 +2,7 @@
 
 API-dokumentasjon for Eresept OppgjørsKontroll.
 
-📖 **Les dokumentasjonen:** [https://studious-giggle-7emp4vm.pages.github.io/](https://studious-giggle-7emp4vm.pages.github.io/)
-
-> Når repoet gjøres public vil URL-en bli: https://navikt.github.io/eresept-oppgjorskrav-api-dok/
+📖 **Les dokumentasjonen:** [https://navikt.github.io/eresept-oppgjorskrav-api-dok/](https://navikt.github.io/eresept-oppgjorskrav-api-dok/)
 
 Dokumentasjonen er skrevet i Markdown og rendres til HTML med [Zensical](https://zensical.org/).
 
