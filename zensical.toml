@@ -1,0 +1,45 @@
+[project]
+site_name = "Eresept oppgjorskontroll APIer"
+site_description = "API-dokumentasjon for Eresept Oppgjørskontroll"
+
+extra_css = ["stylesheets/extra.css"]
+
+nav = [
+    { "Oversikt" = "index.md" },
+    { "Oppgjørskontroll" = [
+        { "Oversikt" = "oppgjorskontroll/eresept_ok_oppgjorskrav.md" },
+        { "Endepunkter" = [
+            { "Ping" = "oppgjorskontroll/ping.md" },
+            { "Send inn oppgjørskrav (M18)" = "oppgjorskontroll/m18.md" },
+            { "Hent status" = "oppgjorskontroll/status.md" },
+            { "Hent M22" = "oppgjorskontroll/m22.md" },
+            { "Hent M23" = "oppgjorskontroll/m23.md" },
+            { "Vedtaksbrev" = "oppgjorskontroll/vedtaksbrev.md" },
+            { "JWK" = "oppgjorskontroll/jwk.md" },
+        ] },
+        { "JWE ende-til-ende-kryptering" = "oppgjorskontroll/jwe_ende_til_ende_kryptering.md" },
+        { "Endringslogg" = "oppgjorskontroll/endringslogg.md" },
+    ] },
+]
+
+[project.theme]
+language = "nb"
+
+features = [
+    "content.code.copy",
+    "search.highlight",
+    "navigation.sections",
+    "navigation.top"
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+toggle.icon = "lucide/sun"
+toggle.name = "Bytt til mørk modus"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Bytt til lys modus"
+
