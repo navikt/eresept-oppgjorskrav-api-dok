@@ -15,16 +15,17 @@ vil også disse være inkludert i responsen.
 
 ## Response
 
-| Felt                | Type     | Beskrivelse                                                                                |
-|---------------------|----------|--------------------------------------------------------------------------------------------|
-|                     | Array    | Liste over oppgjørskrav                                                                    |
-| └─ oppgjorsnr       | String   | Oppgjørsnummer                                                                             |
-| └─ orgnr            | String   | Organisasjonsnummer som oppgjøret er sendt inn på, som angitt i claim i authrization token |
-| └─ status           | CS       | Status på oppgjørskravet. Verider fra kodeverk TBD                                         |                                        | 
-| └─ mottatt          | DateTime | Tidspunkt for når oppgjørskravet ble mottatt                                               |
-| └─ antall regninger | Number   | Antall regninger i kravet                                                                  |
-| └─ sumKrav          | Number   | Sum krav i NOK                                                                             |
-| └─ sumGodkjent      | Number   | Sum godkjent i NOK                                                                         |
+| Felt                | Type               | Beskrivelse                                                                                |
+|---------------------|--------------------|--------------------------------------------------------------------------------------------|
+|                     | Array              | Liste over oppgjørskrav                                                                    |
+| └─ oppgjorsnr       | String             | Oppgjørsnummer                                                                             |
+| └─ orgnr            | String             | Organisasjonsnummer som oppgjøret er sendt inn på, som angitt i claim i authrization token |
+| └─ status           | CS                 | Status på oppgjørskravet. Verider fra kodeverk TBD                                         |                                        | 
+| └─ mottatt          | DateTime           | Tidspunkt for når oppgjørskravet ble mottatt                                               |
+| └─ merknader        | Collection<String> | Merknader som er relevante ved avvist eller manuell status                                 |
+| └─ antall regninger | Number             | Antall regninger i kravet                                                                  |
+| └─ sumKrav          | Number             | Sum krav i NOK                                                                             |
+| └─ sumGodkjent      | Number             | Sum godkjent i NOK                                                                         |
 
 
 | Status | Response | Forklaring                             |
