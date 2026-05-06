@@ -21,7 +21,7 @@ Endepunkt for å hente oppgjorsresultat for et oppgjørskrav.
 | └─── regningsnr    | String              | Regningsnummer                                                                             |
 | └─── krav          | Number              | Sum krav i NOK                                                                             |
 | └─── godkjent      | Number              | Sum godkjent i NOK                                                                         |
-| └─── status        | CS                  | Merknader som er relevante ved avvist eller manuell status                                 |
+| └─── status        | CS                  | Merknader som er relevante ved avvist eller manuell status, fra kodeverk 7410              |
 | └─── merknader     | Collection<CS>      | Merknader som er relevante ved avvist eller manuell status                                 |
 
 | Status | Response                | Forklaring                                                     |

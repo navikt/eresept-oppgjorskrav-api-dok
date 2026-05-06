@@ -20,7 +20,7 @@ vil også disse være inkludert i responsen.
 |                    | Array          | Liste over oppgjørskrav                                                                    |
 | └─ oppgjorsnr      | String         | Oppgjørsnummer                                                                             |
 | └─ orgnr           | String         | Organisasjonsnummer som oppgjøret er sendt inn på, som angitt i claim i authrization token |
-| └─ status          | CS             | Status på oppgjørskravet. Verider fra kodeverk TBD                                         |                                        | 
+| └─ status          | CS             | Status på oppgjørskravet. Verdier fra kodeverk TBD                                         |                                        | 
 | └─ mottatt         | DateTime       | Tidspunkt for når oppgjørskravet ble mottatt                                               |
 | └─ merknader       | Collection<CS> | Merknader som er relevante ved avvist eller manuell status                                 |
 | └─ antallRegninger | Number         | Antall regninger i kravet                                                                  |
