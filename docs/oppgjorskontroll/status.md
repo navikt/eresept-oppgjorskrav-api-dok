@@ -15,17 +15,17 @@ vil også disse være inkludert i responsen.
 
 ## Response
 
-| Felt                | Type               | Beskrivelse                                                                                |
-|---------------------|--------------------|--------------------------------------------------------------------------------------------|
-|                     | Array              | Liste over oppgjørskrav                                                                    |
-| └─ oppgjorsnr       | String             | Oppgjørsnummer                                                                             |
-| └─ orgnr            | String             | Organisasjonsnummer som oppgjøret er sendt inn på, som angitt i claim i authrization token |
-| └─ status           | CS                 | Status på oppgjørskravet. Verider fra kodeverk TBD                                         |                                        | 
-| └─ mottatt          | DateTime           | Tidspunkt for når oppgjørskravet ble mottatt                                               |
-| └─ merknader        | Collection<String> | Merknader som er relevante ved avvist eller manuell status                                 |
-| └─ antall regninger | Number             | Antall regninger i kravet                                                                  |
-| └─ sumKrav          | Number             | Sum krav i NOK                                                                             |
-| └─ sumGodkjent      | Number             | Sum godkjent i NOK                                                                         |
+| Felt               | Type           | Beskrivelse                                                                                |
+|--------------------|----------------|--------------------------------------------------------------------------------------------|
+|                    | Array          | Liste over oppgjørskrav                                                                    |
+| └─ oppgjorsnr      | String         | Oppgjørsnummer                                                                             |
+| └─ orgnr           | String         | Organisasjonsnummer som oppgjøret er sendt inn på, som angitt i claim i authrization token |
+| └─ status          | CS             | Status på oppgjørskravet. Verider fra kodeverk TBD                                         |                                        | 
+| └─ mottatt         | DateTime       | Tidspunkt for når oppgjørskravet ble mottatt                                               |
+| └─ merknader       | Collection<CS> | Merknader som er relevante ved avvist eller manuell status                                 |
+| └─ antallRegninger | Number         | Antall regninger i kravet                                                                  |
+| └─ sumKrav         | Number         | Sum krav i NOK                                                                             |
+| └─ sumGodkjent     | Number         | Sum godkjent i NOK                                                                         |
 
 
 | Status | Response | Forklaring                             |
@@ -58,13 +58,18 @@ Eksempel på response:
     "oppgjorsnr": "c7887780-0410-40ec-b221-bcdc99cf27ca",
     "orgnr": "998858968",
     "status": {
-      "v": "3",
-      "dt": "Utbetalt"
+      "v": "5",
+      "dt": "Avvist"
     },
     "mottatt": "2026-03-02T11:12:45.257+01:00",
+    "merknader": [
+      { 
+        "v":  "100", 
+        "dn": "bare et eksempel på en merknad" }
+    ],
     "antallRegninger": 163,
     "sumKrav": 78901.32,
-    "sumGodkjent": 67802.45
+    "sumGodkjent": 0.00
   }
 ]
 ```

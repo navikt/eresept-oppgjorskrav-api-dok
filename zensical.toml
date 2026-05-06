@@ -13,6 +13,7 @@ nav = [
             { "Send inn oppgjørskrav (M18)" = "oppgjorskontroll/m18.md" },
             { "Hent status" = "oppgjorskontroll/status.md" },
             { "Hent M22" = "oppgjorskontroll/m22.md" },
+            { "Hent oppgjørsresultat" = "oppgjorskontroll/oppgjorsresultat.md" },
             { "Hent M23" = "oppgjorskontroll/m23.md" },
             { "Vedtaksbrev" = "oppgjorskontroll/vedtaksbrev.md" },
             { "JWK" = "oppgjorskontroll/jwk.md" },
