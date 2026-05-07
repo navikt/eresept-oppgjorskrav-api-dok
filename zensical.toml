@@ -15,6 +15,7 @@ nav = [
             { "Hent M22" = "oppgjorskontroll/m22.md" },
             { "Hent oppgjørsresultat" = "oppgjorskontroll/oppgjorsresultat.md" },
             { "Hent M23" = "oppgjorskontroll/m23.md" },
+            { "Hent oppgjørsutbetaling" = "oppgjorskontroll/oppgjorsutbetaling.md" },
             { "Vedtaksbrev" = "oppgjorskontroll/vedtaksbrev.md" },
             { "JWK" = "oppgjorskontroll/jwk.md" },
         ] },

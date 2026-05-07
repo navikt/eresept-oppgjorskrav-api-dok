@@ -1,7 +1,12 @@
 # Endringslogg
 
+## 2026-05-07
+- [Status](status.md) — Lagt til utbetalingsnr i body
+- [Oppgjørsutbetaling](oppgjorsutbetaling.md) — Lagt til oppgjorsutbetaling endepunkt
+- [Oppgjørsresultat](oppgjorsresultat.md) — Lagt til oppgjorsresultat endepunkt
+
 ## 2026-04-30
--[Status](status.md) — Lagt til merknader som er en liste med strenger som kan være relevant dersom oppgjøret har status avvist eller manuell
+- [Status](status.md) — Lagt til merknader som er en liste med strenger som kan være relevant dersom oppgjøret har status avvist eller manuell
 
 ## 2026-04-28
 - [Status](status.md) — Et oppgjørs status er en CS fra kodeverk TBD

@@ -26,6 +26,7 @@ vil også disse være inkludert i responsen.
 | └─ antallRegninger | Number         | Antall regninger i kravet                                                                  |
 | └─ sumKrav         | Number         | Sum krav i NOK                                                                             |
 | └─ sumGodkjent     | Number         | Sum godkjent i NOK                                                                         |
+| └─ utbetalingsnr   | String         | Unik identifikasjon av den enkelte utbetaling, er utfylt om utbetaling er foretatt         |
 
 
 | Status | Response | Forklaring                             |
