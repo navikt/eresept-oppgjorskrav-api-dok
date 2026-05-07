@@ -26,16 +26,17 @@ Etter innsending kan krav følges opp ved å hente status og kontrollresultater.
 
 ## API-endepunkter
 
-| Navn                                                                    | Path                           | Scope                        | Audience          | Type     | Beskrivelse                                                              |
-|-------------------------------------------------------------------------|--------------------------------|------------------------------|-------------------|----------|--------------------------------------------------------------------------|
-| [Test av utleverer](ping.md)                                            | /oppgjorskrav/ping             | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/TEXT | Svarer med pong om utleverer er autorisert for å sende inn oppgjørskrav. |
-| [Send inn oppgjørskrav (M18)](m18.md)                                   | /oppgjorskrav/m18              | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | POST/JWE | Innsending av M18.                                                       |
-| [Hent status for innsendt oppgjørskrav](status.md)                      | /oppgjorskrav/status           | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer status for et eller flere krav.                               |
-| [Hent M22 for innsendt oppgjørskrav](m22.md)                            | /oppgjorskrav/m22              | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/XML  | Returnerer M22 for et enkelt krav.                                       |
-| [Hent oppgjørsresultat for innsendt oppgjørskrav](oppgjorsresultat.md)  | /oppgjorskrav/oppgjorsresultat | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer Oppgjorsresultat for et enkelt krav.                          |
-| [Hent M23 for innsendt oppgjørskrav](m23.md)                            | /oppgjorskrav/m23              | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/XML  | Returnerer M23 for et enkelt krav.                                       |
-| [Hent vedtaksbrev for innsendt oppgjørskrav](vedtaksbrev.md)            | /oppgjorskrav/vedtaksbrev      | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/PDF  | Returnerer vedtaksbrev for et enkelt krav.                               |
-| [Hent Eresept Public Json Web Key - JWK](jwk.md)                        | /eresept/oppgjorskrav/jwk      | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer eresepts offentlige krypteringsnøkkel (JWK).                  |
+| Navn                                                                       | Path                             | Scope                        | Audience          | Type     | Beskrivelse                                                              |
+|----------------------------------------------------------------------------|----------------------------------|------------------------------|-------------------|----------|--------------------------------------------------------------------------|
+| [Test av utleverer](ping.md)                                               | /oppgjorskrav/ping               | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/TEXT | Svarer med pong om utleverer er autorisert for å sende inn oppgjørskrav. |
+| [Send inn oppgjørskrav (M18)](m18.md)                                      | /oppgjorskrav/m18                | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | POST/JWE | Innsending av M18.                                                       |
+| [Hent status for innsendt oppgjørskrav](status.md)                         | /oppgjorskrav/status             | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer status for et eller flere krav.                               |
+| [Hent M22 for innsendt oppgjørskrav](m22.md)                               | /oppgjorskrav/m22                | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/XML  | Returnerer M22 for et enkelt krav.                                       |
+| [Hent oppgjørsresultat for innsendt oppgjørskrav](oppgjorsresultat.md)     | /oppgjorskrav/oppgjorsresultat   | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer Oppgjorsresultat for et enkelt krav.                          |
+| [Hent M23 for innsendt oppgjørskrav](m23.md)                               | /oppgjorskrav/m23                | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/XML  | Returnerer M23 for et enkelt krav.                                       |
+| [Hent oppgjørsutbetaling for innsendt oppgjørskrav](oppgjorsutbetaling.md) | /oppgjorskrav/oppgjorsutbetaling | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer Oppgjorsrutbetaling for et enkelt krav.                       |
+| [Hent vedtaksbrev for innsendt oppgjørskrav](vedtaksbrev.md)               | /oppgjorskrav/vedtaksbrev        | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/PDF  | Returnerer vedtaksbrev for et enkelt krav.                               |
+| [Hent Eresept Public Json Web Key - JWK](jwk.md)                           | /eresept/oppgjorskrav/jwk        | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer eresepts offentlige krypteringsnøkkel (JWK).                  |
 
 
 ### Typer endepunkt

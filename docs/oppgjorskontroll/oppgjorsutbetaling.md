@@ -20,12 +20,12 @@ Endepunkt for å hente oppgjorsutbetaling for et oppgjørskrav.
 | └─ utbetalt      | Number         | Sum utbetalt                                                                               |
 | └─ utbetaltDato  | Date           | Dato for utbetaling av oppgjøret                                                           |
 
-| Status | Response                | Forklaring                                                       |
-|--------|-------------------------|------------------------------------------------------------------|
-| 200    | Oppgjorsresultat (JSON) | Oppgjorsutbetaling er tilgjengelig og returneres                 |
-| 204    |                         | Oppgjorsutbetaling er ikke produsert og ingen respons returneres |
-| 400    |                         | Oppgjøret finnes ikke                                            |
-| 451    |                         | Direkteoppgjørsavtale er ikke på plass                           |
+| Status | Response                  | Forklaring                                                       |
+|--------|---------------------------|------------------------------------------------------------------|
+| 200    | Oppgjorsutbetaling (JSON) | Oppgjorsutbetaling er tilgjengelig og returneres                 |
+| 204    |                           | Oppgjorsutbetaling er ikke produsert og ingen respons returneres |
+| 400    |                           | Oppgjøret finnes ikke                                            |
+| 451    |                           | Direkteoppgjørsavtale er ikke på plass                           |
 
 Eksempel på response:
 
