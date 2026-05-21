@@ -12,13 +12,14 @@ Endepunkt for å hente oppgjorsutbetaling for et oppgjørskrav.
 
 ## Response
 
-| Felt             | Type           | Beskrivelse                                                                                |
-|------------------|----------------|--------------------------------------------------------------------------------------------|
-| └─ oppgjorsnr    | String         | Oppgjørsnummer                                                                             |
-| └─ orgnr         | String         | Organisasjonsnummer som oppgjøret er sendt inn på, som angitt i claim i authrization token |
-| └─ utbetalingsnr | String         | Unik identifikasjon av den enkelte utbetaling                                              |                                        | 
-| └─ utbetalt      | Number         | Sum utbetalt                                                                               |
-| └─ utbetaltDato  | Date           | Dato for utbetaling av oppgjøret                                                           |
+| Felt             | Type    | Beskrivelse                                   |
+|------------------|---------|-----------------------------------------------|
+| └─ oppgjor       | Oppgjor | Oppgjørsnummer                                |
+| └─── oppgjorsNr  | String  | Oppgjørsnummer                                |
+| └─── godkjent    | MO      | Godkjent beløp                                |
+| └─ utbetalingsnr | String  | Unik identifikasjon av den enkelte utbetaling |                                        | 
+| └─ utbetalt      | MO      | Sum utbetalt                                  |
+| └─ utbetaltDato  | Date    | Dato for utbetaling av oppgjøret              |
 
 | Status | Response                  | Forklaring                                                       |
 |--------|---------------------------|------------------------------------------------------------------|
@@ -31,10 +32,18 @@ Eksempel på response:
 
 ```json
 {
-  "oppgjorsnr": "xbb7babfb-c7f0-41d6-9848-a7ed02284a41",
-  "orgnr": "888888888",
+  "oppgjor": {
+    "oppgjorsNr": "xbb7babfb-c7f0-41d6-9848-a7ed02284a41",
+    "godkjent": {
+      "v": 127.20,
+      "u": "NOK"
+    }
+  },
   "utbetalingsnr": "510000000020998",
-  "utbetalt": 127.20,
+  "utbetalt": {
+    "v": 127.20,
+    "u": "NOK"
+  },
   "utbetaltDato": "2026-05-07"
 }
 ```

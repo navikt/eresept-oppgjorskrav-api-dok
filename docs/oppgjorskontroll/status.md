@@ -18,14 +18,13 @@ vil også disse være inkludert i responsen.
 | Felt               | Type           | Beskrivelse                                                                                |
 |--------------------|----------------|--------------------------------------------------------------------------------------------|
 |                    | Array          | Liste over oppgjørskrav                                                                    |
-| └─ oppgjorsnr      | String         | Oppgjørsnummer                                                                             |
-| └─ orgnr           | String         | Organisasjonsnummer som oppgjøret er sendt inn på, som angitt i claim i authrization token |
+| └─ oppgjorsNr      | String         | Oppgjørsnummer                                                                             |
 | └─ status          | CS             | Status på oppgjørskravet. Verdier fra kodeverk TBD                                         |                                        | 
 | └─ mottatt         | DateTime       | Tidspunkt for når oppgjørskravet ble mottatt                                               |
-| └─ merknader       | Collection<CS> | Merknader som er relevante ved avvist eller manuell status                                 |
+| └─ merknad         | Collection<CS> | Merknader som er relevante ved avvist eller manuell status                                 |
 | └─ antallRegninger | Number         | Antall regninger i kravet                                                                  |
-| └─ sumKrav         | Number         | Sum krav i NOK                                                                             |
-| └─ sumGodkjent     | Number         | Sum godkjent i NOK                                                                         |
+| └─ sumKrav         | MO             | Sum krav i NOK                                                                             |
+| └─ sumGodkjent     | MO             | Sum godkjent i NOK                                                                         |
 | └─ utbetalingsnr   | String         | Unik identifikasjon av den enkelte utbetaling, er utfylt om utbetaling er foretatt         |
 
 
@@ -37,40 +36,68 @@ vil også disse være inkludert i responsen.
 Eksempel på request-url:
 
 ```
-/eresept/oppgjorskrav/status?oppgjorsnr=b244ff4f-b701-4d16-81d8-53a052daff6b,c7887780-0410-40ec-b221-bcdc99cf27ca
+/eresept/oppgjorskrav/status?oppgjorsnr=b244ff4f-b701-4d16-81d8-53a052daff6b,c7887780-0410-40ec-b221-bcdc99cf27ca,xyz
 ```
 Eksempel på response:
 
 ```json
 [
   {
-    "oppgjorsnr": "b244ff4f-b701-4d16-81d8-53a052daff6b",
-    "orgnr": "974589109",
+    "oppgjorsNr": "b244ff4f-b701-4d16-81d8-53a052daff6b",
     "status": {
       "v": "2",
-      "dt": "Godkjent"
+      "dn": "Godkjent"
     },
     "mottatt": "2026-02-02T10:09:57.260+01:00",
     "antallRegninger": 2,
-    "sumKrav": 759.10,
-    "sumGodkjent": 759.10
+    "krav": {
+      "v": 759.10,
+      "u": "NOK"
+    },
+    "godkjent": {
+      "v": 759.10,
+      "u": "NOK"
+    }
   },
   {
     "oppgjorsnr": "c7887780-0410-40ec-b221-bcdc99cf27ca",
     "orgnr": "998858968",
     "status": {
       "v": "5",
-      "dt": "Avvist"
+      "dn": "Avvist"
     },
     "mottatt": "2026-03-02T11:12:45.257+01:00",
-    "merknader": [
+    "merknad": [
       { 
         "v":  "100", 
         "dn": "bare et eksempel på en merknad" }
     ],
     "antallRegninger": 163,
-    "sumKrav": 78901.32,
-    "sumGodkjent": 0.00
+    "krav": {
+      "v": 78901.32,
+      "u": "NOK"
+    },
+    "godkjent": {
+      "v": 0.00,
+      "u": "NOK"
+    }
+  },
+  {
+    "oppgjorsnr": "xyz",
+    "status": {
+      "v": "6",
+      "dn": "Ukjent"
+    },
+    "merknad": [],
+    "antallRegninger": 0,
+    "krav": {
+      "v": 0.00,
+      "u": "NOK"
+    },
+    "godkjent": {
+      "v": 0.00,
+      "u": "NOK"
+    }
   }
 ]
 ```

@@ -14,15 +14,14 @@ Endepunkt for å hente oppgjorsresultat for et oppgjørskrav.
 
 | Felt               | Type                | Beskrivelse                                                                                |
 |--------------------|---------------------|--------------------------------------------------------------------------------------------|
-| └─ oppgjorsnr      | String              | Oppgjørsnummer                                                                             |
-| └─ orgnr           | String              | Organisasjonsnummer som oppgjøret er sendt inn på, som angitt i claim i authrization token |
+| └─ oppgjorsNr      | String              | Oppgjørsnummer                                                                             |
 | └─ behandlingsDato | DateTime            | Dato for behandling av oppgjøret                                                           |                                        | 
-| └─ regninger       | Collection<Regning> | Liste med regningene i kravet                                                              |
-| └─── regningsnr    | String              | Regningsnummer                                                                             |
-| └─── krav          | Number              | Sum krav i NOK                                                                             |
-| └─── godkjent      | Number              | Sum godkjent i NOK                                                                         |
+| └─ regning         | Collection<Regning> | Liste med regningene i kravet                                                              |
+| └─── regningsNr    | String              | Regningsnummer                                                                             |
+| └─── krav          | MO                  | Sum krav i NOK                                                                             |
+| └─── godkjent      | MO                  | Sum godkjent i NOK                                                                         |
 | └─── status        | CS                  | Merknader som er relevante ved avvist eller manuell status, fra kodeverk 7410              |
-| └─── merknader     | Collection<CS>      | Merknader som er relevante ved avvist eller manuell status                                 |
+| └─── merknad       | Collection<CS>      | Merknader som er relevante ved avvist eller manuell status                                 |
 
 | Status | Response                | Forklaring                                                     |
 |--------|-------------------------|----------------------------------------------------------------|
@@ -35,19 +34,24 @@ Eksempel på response:
 
 ```json
 {
-  "oppgjorsnr": "ee3fea12-7346-46c4-8d4b-8ed343da36a6",
-  "orgnr": "976924185",
+  "oppgjorsNr": "ee3fea12-7346-46c4-8d4b-8ed343da36a6",
   "behandlingDato": "2026-05-06T16:38:23.457823748+02:00",
-  "regninger": [
+  "regning": [
     {
-      "regningsnr": "8229d7d0-0123-4e66-809c-2b22db687954",
-      "krav": 70.00,
-      "godkjent": 0.00,
+      "regningsNr": "8229d7d0-0123-4e66-809c-2b22db687954",
+      "krav": { 
+        "v": 70.00, 
+        "u": "NOK"
+      },
+      "godkjent": { 
+        "v": 0.00, 
+        "u": "NOK"
+      },
       "status": {
         "v": "1",
         "dn": "Avvist"
       },
-      "merknader": [
+      "merknad": [
         {
           "v": "114",
           "dn": "Resepten er foreldet"
@@ -63,14 +67,20 @@ Eksempel på response:
       ]
     },
     {
-      "regningsnr": "6c5c9f34-6c70-4f46-b06b-9f11916da408",
-      "krav": 70.00,
-      "godkjent": 70.00,
+      "regningsNr": "6c5c9f34-6c70-4f46-b06b-9f11916da408",
+      "krav": {
+        "v": 70.00,
+        "u": "NOK"
+      },
+      "godkjent": {
+        "v": 70.00,
+        "u": "NOK"
+      },
       "status": {
         "v": "2",
         "dn": "Godkjent"
       },
-      "merknader": []
+      "merknad": []
     }
   ]
 }

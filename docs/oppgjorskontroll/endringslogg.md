@@ -1,5 +1,10 @@
 # Endringslogg
 
+## 2026-05-21
+- [Status](status.md) — Fjernet orgnr, harmonisering av felt, beløp er av type MO, kan vise status på ukjent oppgjør
+- [OppgjørsResultat](oppgjorsresultat.md) — Fjernet orgnr, harmonisering av felt, beløp er av type MO
+- [OppgjørsUtbetaling](oppgjorsutbetaling.md) — Fjernet orgnr, harmonisering av felt, beløp er av type MO
+
 ## 2026-05-07
 - [Status](status.md) — Lagt til utbetalingsnr i body
 - [Oppgjørsutbetaling](oppgjorsutbetaling.md) — Lagt til oppgjorsutbetaling endepunkt
