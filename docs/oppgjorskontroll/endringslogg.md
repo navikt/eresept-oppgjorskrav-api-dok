@@ -1,5 +1,9 @@
 # Endringslogg
 
+## 2026-06-17
+- [Validate](validate.md) — La til beskrivelse av validate endepunkt
+- [Schema](schema.md) — La til beskrivelse av schema endepunkt
+
 ## 2026-05-21
 - [Status](status.md) — Fjernet orgnr, harmonisering av felt, beløp er av type MO, kan vise status på ukjent oppgjør
 - [OppgjørsResultat](oppgjorsresultat.md) — Fjernet orgnr, harmonisering av felt, beløp er av type MO

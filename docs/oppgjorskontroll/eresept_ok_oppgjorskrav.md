@@ -36,8 +36,9 @@ Etter innsending kan krav følges opp ved å hente status og kontrollresultater.
 | [Hent M23 for innsendt oppgjørskrav](m23.md)                               | /oppgjorskrav/m23                | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/XML  | Returnerer M23 for et enkelt krav.                                       |
 | [Hent oppgjørsutbetaling for innsendt oppgjørskrav](oppgjorsutbetaling.md) | /oppgjorskrav/oppgjorsutbetaling | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer Oppgjorsrutbetaling for et enkelt krav.                       |
 | [Hent vedtaksbrev for innsendt oppgjørskrav](vedtaksbrev.md)               | /oppgjorskrav/vedtaksbrev        | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/PDF  | Returnerer vedtaksbrev for et enkelt krav.                               |
-| [Hent Eresept Public Json Web Key - JWK](jwk.md)                           | /eresept/oppgjorskrav/jwk        | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer eresepts offentlige krypteringsnøkkel (JWK).                  |
-
+| [Hent Eresept Public Json Web Key - JWK](jwk.md)                           | /oppgjorskrav/jwk                | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer eresepts offentlige krypteringsnøkkel (JWK).                  |
+| [Validering av oppgjørskrav iht JSON schema](validate.md)                  | /oppgjorskrav/validate           | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | POST/JWE | Validering av oppgjørskrav (JSON)                                        |
+| [Hent oppgjørskrav JSON schema](schema.md)                                 | /oppgjorskrav/schema             | hdir:eresept-ok/oppgjorskrav | hdir:eresept-ok   | GET/JSON | Returnerer oppgjørskrav JSON schema                                      |
 
 ### Typer endepunkt
 
@@ -88,7 +89,7 @@ Mer informasjon:
 
 ## Versjonering
 Header `x-api-version` brukes for å angi versjon dersom endringer gjør at det blir nødvendig å skille på versjoner.
-Pt. har den ingen effekt, vi er på versjon 1.
+Gyldige versjoner er `1.0` og `2.0`.
 
 ## OpenAPI-spesifikasjon
 
