@@ -13,19 +13,13 @@ nav = [
             { "JWK" = "oppgjorskontroll/jwk.md" },
             { "Status" = "oppgjorskontroll/status.md" },
             { "Vedtaksbrev" = "oppgjorskontroll/vedtaksbrev.md" },
-            { "XML" = [
-                { "M18" = "oppgjorskontroll/m18.md" },
-                { "M22" = "oppgjorskontroll/m22.md" },
-                { "M23" = "oppgjorskontroll/m23.md" },
-            ]
-            },
-            { "JSON" = [
-                { "Validate" = "oppgjorskontroll/validate.md" },
-                { "Schema" = "oppgjorskontroll/schema.md" },
-                { "Oppgjørsresultat" = "oppgjorskontroll/oppgjorsresultat.md" },
-                { "Oppgjørsutbetaling" = "oppgjorskontroll/oppgjorsutbetaling.md" },
-            ]
-            },
+            { "M18" = "oppgjorskontroll/m18.md" },
+            { "M22" = "oppgjorskontroll/m22.md" },
+            { "M23" = "oppgjorskontroll/m23.md" },
+            { "Validate" = "oppgjorskontroll/validate.md" },
+            { "Schema" = "oppgjorskontroll/schema.md" },
+            { "Oppgjørsresultat" = "oppgjorskontroll/oppgjorsresultat.md" },
+            { "Oppgjørsutbetaling" = "oppgjorskontroll/oppgjorsutbetaling.md" },
         ] },
         { "JWE ende-til-ende-kryptering" = "oppgjorskontroll/jwe_ende_til_ende_kryptering.md" },
         { "Endringslogg" = "oppgjorskontroll/endringslogg.md" },
