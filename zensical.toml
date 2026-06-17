@@ -18,6 +18,8 @@ nav = [
             { "Hent oppgjørsutbetaling" = "oppgjorskontroll/oppgjorsutbetaling.md" },
             { "Vedtaksbrev" = "oppgjorskontroll/vedtaksbrev.md" },
             { "JWK" = "oppgjorskontroll/jwk.md" },
+            { "Validate" = "oppgjorskontroll/validate.md" },
+            { "Schema" = "oppgjorskontroll/schema.md" },
         ] },
         { "JWE ende-til-ende-kryptering" = "oppgjorskontroll/jwe_ende_til_ende_kryptering.md" },
         { "Endringslogg" = "oppgjorskontroll/endringslogg.md" },
