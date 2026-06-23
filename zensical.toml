@@ -18,6 +18,7 @@ nav = [
             { "M23" = "oppgjorskontroll/m23.md" },
             { "Validate" = "oppgjorskontroll/validate.md" },
             { "Schema" = "oppgjorskontroll/schema.md" },
+            { "Oppgjørskrav" = "oppgjorskontroll/oppgjorskrav.md" },
             { "Oppgjørsresultat" = "oppgjorskontroll/oppgjorsresultat.md" },
             { "Oppgjørsutbetaling" = "oppgjorskontroll/oppgjorsutbetaling.md" },
         ] },

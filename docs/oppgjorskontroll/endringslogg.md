@@ -1,5 +1,8 @@
 # Endringslogg
 
+## 2026-06-23
+- [Oppgjørskrav](oppgjorskrav.md) — La til beskrivelse av oppgjorskrav endepunkt
+- 
 ## 2026-06-17
 - [Validate](validate.md) — La til beskrivelse av validate endepunkt
 - [Schema](schema.md) — La til beskrivelse av schema endepunkt
