@@ -1,5 +1,8 @@
 # Endringslogg
 
+## 2026-06-26
+- [Takster](takst.md) — La til beskrivelse av taskter endepunkt
+
 ## 2026-06-23
 - [Oppgjørskrav](oppgjorskrav.md) — La til beskrivelse av oppgjorskrav endepunkt
 - 
