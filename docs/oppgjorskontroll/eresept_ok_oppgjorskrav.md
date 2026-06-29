@@ -65,6 +65,12 @@ Mer informasjon:
 
 For APIet brukes HelseID scope **hdir:eresept:oppgjorskontroll**
 
+#### Algoritmer
+
+Vi støtter ikke RS-algoritmene (RS256, RS384 og RS512) i DPoP beviset og heller ikke i HelseID token
+(HelseID slutter å støtte dem i januar 2027).
+PS256, PS384 eller PS512 kan benyttes i stedet.
+
 #### Organisasjonsnumre
 APIet krever organisasjonsnummer, hovedenhet oog eventuell underenhet. 
 Se [organisasjonsnumre](https://utviklerportal.nhn.no/informasjonstjenester/helseid/bruksmoenstre-og-eksempelkode/bruk-av-helseid/docs/tekniske-mekanismer/organisasjonsnumre_no_nbmd) 
