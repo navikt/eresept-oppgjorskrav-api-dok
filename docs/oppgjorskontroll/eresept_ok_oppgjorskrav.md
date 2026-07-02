@@ -72,10 +72,21 @@ Vi støtter ikke RS-algoritmene (RS256, RS384 og RS512) i DPoP beviset og heller
 PS256, PS384 eller PS512 kan benyttes i stedet.
 
 #### Organisasjonsnumre
-APIet krever organisasjonsnummer, hovedenhet oog eventuell underenhet. 
+APIet krever organisasjonsnummer, hovedenhet og eventuell underenhet. 
 Se [organisasjonsnumre](https://utviklerportal.nhn.no/informasjonstjenester/helseid/bruksmoenstre-og-eksempelkode/bruk-av-helseid/docs/tekniske-mekanismer/organisasjonsnumre_no_nbmd) 
 for hvordan man kan få dette inkludert i tokenet.
 
+Dersom både `helseid://claims/client/claims/orgnr_parent` og `helseid://claims/client/claims/orgnr_child` 
+claimene finnes i tokene gjøres det oppslag mot Enhetsregisteret for å sjekke at `child` 
+organisasjonsnummeret faktisk er en underenhet til `parent`. Om det ikke er tilfelle avvises kallet med 451.
+Dersom `helseid://claims/client/claims/orgnr_child` claim ikke er tilstede gjøres ingen oppslag. Et token uten
+`helseid://claims/client/claims/orgnr_parent` claim gir ikke mening og vil bli avvist.
+
+
+> **Note**
+>
+> Oppslagene mot Enhetsregisteret gjøres også i test-miljøet. 
+> Testmiljøet til Enhetsregisteret innholder ikke reelle organisasjonsnummer.
 
 ## Kryptering av helseopplysninger
 

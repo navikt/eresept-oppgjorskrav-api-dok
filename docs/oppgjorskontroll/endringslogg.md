@@ -1,5 +1,9 @@
 # Endringslogg
 
+## 2026-07-02
+- [Organisasjonsnumre](eresept_ok_oppgjorskrav.md) — Ytterligere presisering av orgnummer i token.
+
+
 ## 2026-06-26
 - [Takster](takst.md) — La til beskrivelse av taskter endepunkt
 
