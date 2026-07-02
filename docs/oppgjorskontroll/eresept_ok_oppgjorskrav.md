@@ -86,7 +86,7 @@ Dersom `helseid://claims/client/claims/orgnr_child` claim ikke er tilstede gjør
 > **Note**
 >
 > Oppslagene mot Enhetsregisteret gjøres også i test-miljøet. 
-> Testmiljøet til Enhetsregisteret innholder ikke reelle organisasjonsnummer.
+> Testmiljøet til Enhetsregisteret inneholder ikke reelle organisasjonsnummer.
 
 ## Kryptering av helseopplysninger
 
