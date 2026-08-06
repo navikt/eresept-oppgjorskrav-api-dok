@@ -63,7 +63,7 @@ Foretrukket autentiseringsmekansime.
 Mer informasjon:
 [HelseID – NHN utviklerportal](https://utviklerportal.nhn.no/informasjonstjenester/helseid/)
 
-For APIet brukes HelseID scope **hdir:eresept:oppgjorskontroll**
+For APIet brukes HelseID scope **hdir:eresept-ok:oppgjorskrav**
 
 #### Algoritmer
 
