@@ -3,7 +3,6 @@
 ## 2026-07-02
 - [Organisasjonsnumre](eresept_ok_oppgjorskrav.md) — Ytterligere presisering av orgnummer i token.
 
-
 ## 2026-06-26
 - [Takster](takst.md) — La til beskrivelse av taskter endepunkt
 
@@ -28,7 +27,7 @@
 - [Status](status.md) — Lagt til merknader som er en liste med strenger som kan være relevant dersom oppgjøret har status avvist eller manuell
 
 ## 2026-04-28
-- [Status](status.md) — Et oppgjørs status er en CS fra kodeverk TBD
+- [Status](status.md) — Et oppgjørs status er en CS fra kodeverk 7546
 
 ## 2026-04-18
 - [Organisasjonsnumre](eresept_ok_oppgjorskrav.md) — Lagt til informasjon om at API krever organisasjonsumre

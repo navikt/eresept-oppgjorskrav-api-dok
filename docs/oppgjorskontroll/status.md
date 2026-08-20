@@ -15,17 +15,17 @@ vil også disse være inkludert i responsen.
 
 ## Response
 
-| Felt               | Type           | Beskrivelse                                                                                |
-|--------------------|----------------|--------------------------------------------------------------------------------------------|
-|                    | Array          | Liste over oppgjørskrav                                                                    |
-| └─ oppgjorsNr      | String         | Oppgjørsnummer                                                                             |
-| └─ status          | CS             | Status på oppgjørskravet. Verdier fra kodeverk TBD                                         |                                        | 
-| └─ mottatt         | DateTime       | Tidspunkt for når oppgjørskravet ble mottatt                                               |
-| └─ merknad         | Collection<CS> | Merknader som er relevante ved avvist eller manuell status                                 |
-| └─ antallRegninger | Number         | Antall regninger i kravet                                                                  |
-| └─ sumKrav         | MO             | Sum krav i NOK                                                                             |
-| └─ sumGodkjent     | MO             | Sum godkjent i NOK                                                                         |
-| └─ utbetalingsnr   | String         | Unik identifikasjon av den enkelte utbetaling, er utfylt om utbetaling er foretatt         |
+| Felt               | Type           | Beskrivelse                                                                        |
+|--------------------|----------------|------------------------------------------------------------------------------------|
+|                    | Array          | Liste over oppgjørskrav                                                            |
+| └─ oppgjorsNr      | String         | Oppgjørsnummer                                                                     |
+| └─ status          | CS             | Status på oppgjørskravet. Verdier fra kodeverk 7546                                |                                        | 
+| └─ mottatt         | DateTime       | Tidspunkt for når oppgjørskravet ble mottatt                                       |
+| └─ merknad         | Collection<CS> | Merknader som er relevante ved avvist eller manuell status                         |
+| └─ antallRegninger | Number         | Antall regninger i kravet                                                          |
+| └─ sumKrav         | MO             | Sum krav i NOK                                                                     |
+| └─ sumGodkjent     | MO             | Sum godkjent i NOK                                                                 |
+| └─ utbetalingsnr   | String         | Unik identifikasjon av den enkelte utbetaling, er utfylt om utbetaling er foretatt |
 
 
 | Status | Response | Forklaring                             |
