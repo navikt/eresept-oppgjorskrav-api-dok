@@ -1,5 +1,8 @@
 # Endringslogg
 
+## 2026-10-05
+- [Caching](jwk.md) — Jwk kan caches.
+- 
 ## 2026-07-02
 - [Organisasjonsnumre](eresept_ok_oppgjorskrav.md) — Ytterligere presisering av orgnummer i token.
 

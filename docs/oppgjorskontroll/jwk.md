@@ -1,6 +1,7 @@
 # JWK
 
 Endepunkt for å hente nyeste eresept public JWK som skal brukes for å kryptere oppgjørskrav som skal sendes inn.
+Jwk vil inneholde en expiration, exp, og kan caches av klienter frem til dette tidspunktet. 
 
 
 | Felt                    | Verdi            |
