@@ -1,6 +1,6 @@
 # Validate
 
-Endepunkt for validering av JSON oppgjørskrav.
+Endepunkt for validering av JSON oppgjørskrav kryptert med JWE.
 
 | Felt                    | Verdi                  |
 |-------------------------|------------------------|

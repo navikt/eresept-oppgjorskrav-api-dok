@@ -5,6 +5,11 @@ Det betyr at klienten krypterer forespørselen med eresept sin offentlige nøkke
 
 **Merk:** JWE-signering benyttes **ikke**. Kun kryptering er i bruk. Det betyr at klienten ikke trenger å ha et eget sertifikat eller JWK for signering.
 
+Vi aksepterer følgende innhold content-type headeren for innhold kryptert med JWE.
+* text/plain
+* application/jose
+* application/jose+jwt
+
 ---
 
 ## Hva er JWE?

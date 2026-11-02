@@ -1,5 +1,11 @@
 # Endringslogg
 
+## 2026-11-02
+- [](eresept_ok_oppgjorskrav.md) — content type
+- [](jwe_ende_til_ende_kryptering.md) — content type
+- [](oppgjorskrav.md) — content type
+- [](validate.md) — content type
+
 ## 2026-10-05
 - [Caching](jwk.md) — Jwk kan caches.
 - 

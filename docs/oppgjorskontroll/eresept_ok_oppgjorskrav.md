@@ -82,6 +82,13 @@ organisasjonsnummeret faktisk er en underenhet til `parent`. Om det ikke er tilf
 Dersom `helseid://claims/client/claims/orgnr_child` claim ikke er tilstede gjøres ingen oppslag. Et token uten
 `helseid://claims/client/claims/orgnr_parent` claim gir ikke mening og vil bli avvist.
 
+#### Generelle feilstatuser
+
+| Status | Response | Forklaring                                                                                          |
+|--------|----------|-----------------------------------------------------------------------------------------------------|
+| 401    |          | Feil under autentisering                                         |
+| 403    |          | Forbidden |
+| 451    |          | Direkteoppgjørsavtale er ikke på plass                                                              |
 
 > **Note**
 >

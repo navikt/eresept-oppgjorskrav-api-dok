@@ -1,6 +1,7 @@
 # Oppgjørskrav
 
-Endepunkt for innsending av ett oppgjørskrav på JSON format.
+Endepunkt for innsending av ett oppgjørskrav på JSON format kryptert med JWE.
+
 
 | Felt                    | Verdi                      |
 |-------------------------|----------------------------|
