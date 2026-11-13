@@ -1,14 +1,18 @@
 # Endringslogg
 
+## 2026-11-13
+- [OppgjorsUtbetaling](oppgjorsutbetaling.md) — Presisering av status for null-oppgjør og ref. til flere oppgjørskrav, rettet eksempel
+- [M23](m23.md) — Presisering av status for null-oppgjør og ref. til flere oppgjørskrav
+
 ## 2026-11-02
-- [](eresept_ok_oppgjorskrav.md) — content type
-- [](jwe_ende_til_ende_kryptering.md) — content type
-- [](oppgjorskrav.md) — content type
-- [](validate.md) — content type
+- [om Content-Type](eresept_ok_oppgjorskrav.md) — content type
+- [Content-Type jwe](jwe_ende_til_ende_kryptering.md) — content type
+- [Content-Type opgjørskrav](oppgjorskrav.md) — content type
+- [Content-Type validering](validate.md) — content type
 
 ## 2026-10-05
 - [Caching](jwk.md) — Jwk kan caches.
-- 
+
 ## 2026-07-02
 - [Organisasjonsnumre](eresept_ok_oppgjorskrav.md) — Ytterligere presisering av orgnummer i token.
 
